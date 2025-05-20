@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>0513-02</title>
+    <style>
+        body{
+            margin: 0 auto;
+            width: 720px; 
+        }
+        .box{
+            background-color:#b5c5f9;
+            width:720px;
+            height: 40px;
+            line-height: 35px;
+            font-size: 16px;
+            color: #1754ae;
+            padding-left:12px;
+        }
+        .box3{
+            margin-top: 12px;
+            line-height: 20px;
+            font-size: 16px;
+            margin-left: 12px;
+            border-left: 5px solid #b5c5f9;
+            padding:10px;
+            margin-left: 0;
+            
+        }
+/*    设置边框是1个像素， border-collapse: collapse这个设置是collapse（合并）：相邻单元格的边框会合并为单一边框，这个separate（分开，默认值）：相邻单元格的边框会分开显示*/
+        table {
+        margin-top: 15px;
+        font-size: 12px;
+        border: 1px solid #8F8F8F; 
+        border-collapse: collapse; 
+}
+
+        table td {
+        border: 1px solid #8F8F8F; 
+        padding: 8px;              
+}
+        .box4{
+            background-color:#ffeca0;
+            width:32px;
+            height: 22px;
+            display:inline-block;
+            color: #1754ae;
+            margin-left: 6px;
+            text-align: center;
+        }
+        ul li{
+            list-style: none;
+        }
+        .box6{
+            text-align: center;
+            margin-top: 15px;
+        }
+        .long-input {
+        width: 500px;
+    }
+        input{
+            height: 29px;
+        }
+        .xiao{
+            height:10px;
+        }
+        .tijiao{
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">vip学员登记</div>
+    <div class="box3">学员信息输入</div>
+    <table width="720" bordercolor="#8F8F8F">
+        <thead>
+            <tr>
+                <td bgcolor="#CBD5F1"><label for="name">姓名</label><div class="box4">必填</div></td>
+                <td><input type="text" placeholder="火辣土豆片" required></td>
+            </tr>
+        </thead>
+        <body>
+            <tr>
+                <td bgcolor="#CBD5F1"><label>性别</label><div class="box4">必填</div></td>
+                    <td> <input type="radio" name="gender" id="man"><label for="man">男</label>
+				         <input type="radio" name="gender" id="woman"><label for="woman">女</label>
+                    </td>
+            </tr>
+            <tr>
+                <td bgcolor="#CBD5F1"><label for="user">登录ID<br>(电子邮箱)</label><div class="box4">必填</div></td>
+                <td><input type="text" required placeholder="请填写id" class="long-input">
+                    <p>id不能超过8个字<br>不能出现特殊符号或者表情。</p>
+                    <input type="text" required placeholder="请再次填写id" class="long-input">
+                    <p>確認のためもラ-度入カください。</p>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="#CBD5F1"><label for="user">密码</label><div class="box4">必填</div></td>
+                <td><input type="password" required placeholder="请填写密码">
+                    <p>开头必须是字母<br>数字6-18位，不能出现特殊符号。</p>
+                    <input type="password" required placeholder="请再次填写密码">
+                    <p>请确认第二次输入密码与第一次密码一致。</p>
+                </td>
+            </tr>
+             <tr>
+                <td bgcolor="#CBD5F1"><label for="name">注意事项</label><div class="box4">必填</div></td>
+                <td>
+                     <ul>
+                         <li> <input type="checkbox" class="xiao" id="1"><label for="1">商品驕入可能</label></li>
+                        <li> <input type="checkbox" class="xiao" id="2"><label for="2">代行ログイン可能</label></li> 
+                         <li>  <input type="checkbox" class="xiao" id="3"><label for="3">アカウント管理可能</label></li>
+                         <li> <input type="checkbox" class="xiao" id="4"><label for="4">配下の顾客追加·編集可能</label></li>
+                         <li> <input type="checkbox" class="xiao" id="5"><label for="5">自社プロフイ-ル磊集可能</label></li>
+                    </ul>
+                 </td>
+            </tr>
+            
+        </body>
+    </table>
+          <div class="tijiao"><input type="submit" value="提交"></div>
+</body>
+</html>
